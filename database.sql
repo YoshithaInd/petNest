@@ -1,0 +1,5 @@
+-- =========================================================
+-- PetNest Database Schema
+-- Purpose: Complete 8-table MySQL database script.
+-- Scope: Database / System
+-- =========================================================
