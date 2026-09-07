@@ -4,11 +4,7 @@
  * Purpose: Pet owner overview dashboard displaying booking status, quick actions, and pet summaries.
  * Scope: Member 1 & Member 4
  */
-<?php
-/**
- * PetNest - Pet Owner Dashboard
- * Member 1 Module
- */
+
 
 $pageTitle = "Owner Dashboard - PetNest";
 require_once __DIR__ . '/../includes/header.php';

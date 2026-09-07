@@ -4,11 +4,6 @@
  * Purpose: Admin interface to inspect and moderate user reviews and ratings.
  * Scope: Member 4
  */
-<?php
-/**
- * PetNest - Admin Review Moderation
- * Member 4 Module
- */
 
 $pageTitle = "Moderate Reviews - Admin";
 require_once __DIR__ . '/../includes/header.php';

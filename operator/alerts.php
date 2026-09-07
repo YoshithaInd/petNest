@@ -1,9 +1,4 @@
-<?php
-/**
- * PetNest - Alerts Monitoring
- * Purpose: Review and handle incoming platform alerts and emergency notifications.
- * Scope: Member 4
- */
+
 <?php
 /**
  * PetNest - Operator Emergency Alerts Monitoring Desk

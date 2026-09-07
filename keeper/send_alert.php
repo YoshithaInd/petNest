@@ -4,11 +4,7 @@
  * Purpose: Dispatch emergency or update alerts regarding pet stays to owners and operators.
  * Scope: Member 4
  */
-<?php
-/**
- * PetNest - Send Emergency Alert
- * Member 4 Module
- */
+
 
 $pageTitle = "Trigger Emergency Alert - PetNest";
 require_once __DIR__ . '/../includes/header.php';
