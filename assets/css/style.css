@@ -13,7 +13,7 @@
   --secondary-light: #EBF3EA;
   --accent: #D97706;
   --accent-light: #FEF3C7;
-  
+
   /* Neutral Palette */
   --bg-main: #FBF9F6;
   --bg-card: #FFFFFF;
@@ -21,7 +21,7 @@
   --text-muted: #6E6259;
   --border-color: #E8DFD5;
   --border-focus: #8D5B36;
-  
+
   /* Status Colors */
   --status-pending-bg: #FEF3C7;
   --status-pending-text: #92400E;
@@ -48,7 +48,9 @@
 }
 
 /* Reset & Base */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -156,7 +158,8 @@ img {
   border-radius: var(--radius-sm);
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
   color: var(--primary);
   background: var(--primary-light);
 }
@@ -267,7 +270,9 @@ img {
   font-size: 0.9rem;
 }
 
-.form-control, .form-select, textarea {
+.form-control,
+.form-select,
+textarea {
   width: 100%;
   padding: 10px 14px;
   font-size: 0.95rem;
@@ -279,7 +284,9 @@ img {
   transition: var(--transition);
 }
 
-.form-control:focus, .form-select:focus, textarea:focus {
+.form-control:focus,
+.form-select:focus,
+textarea:focus {
   outline: none;
   border-color: var(--border-focus);
   box-shadow: 0 0 0 3px rgba(107, 66, 38, 0.15);
@@ -346,15 +353,45 @@ img {
   text-transform: capitalize;
 }
 
-.badge-pending   { background: var(--status-pending-bg);   color: var(--status-pending-text); }
-.badge-confirmed { background: var(--status-confirmed-bg); color: var(--status-confirmed-text); }
-.badge-active    { background: var(--status-active-bg);    color: var(--status-active-text); }
-.badge-completed { background: var(--status-completed-bg); color: var(--status-completed-text); }
-.badge-rejected  { background: var(--status-rejected-bg);  color: var(--status-rejected-text); }
-.badge-cancelled { background: var(--status-cancelled-bg); color: var(--status-cancelled-text); }
+.badge-pending {
+  background: var(--status-pending-bg);
+  color: var(--status-pending-text);
+}
 
-.badge-available   { background: #DCFCE7; color: #166534; }
-.badge-unavailable { background: #FEE2E2; color: #991B1B; }
+.badge-confirmed {
+  background: var(--status-confirmed-bg);
+  color: var(--status-confirmed-text);
+}
+
+.badge-active {
+  background: var(--status-active-bg);
+  color: var(--status-active-text);
+}
+
+.badge-completed {
+  background: var(--status-completed-bg);
+  color: var(--status-completed-text);
+}
+
+.badge-rejected {
+  background: var(--status-rejected-bg);
+  color: var(--status-rejected-text);
+}
+
+.badge-cancelled {
+  background: var(--status-cancelled-bg);
+  color: var(--status-cancelled-text);
+}
+
+.badge-available {
+  background: #DCFCE7;
+  color: #166534;
+}
+
+.badge-unavailable {
+  background: #FEE2E2;
+  color: #991B1B;
+}
 
 /* ==========================================================================
    Alerts & Notifications
@@ -369,10 +406,29 @@ img {
   border: 1px solid transparent;
 }
 
-.alert-success { background: #DCFCE7; color: #166534; border-color: #BBF7D0; }
-.alert-danger  { background: #FEE2E2; color: #991B1B; border-color: #FECACA; }
-.alert-warning { background: #FEF3C7; color: #92400E; border-color: #FDE68A; }
-.alert-info    { background: #DBEAFE; color: #1E40AF; border-color: #BFDBFE; }
+.alert-success {
+  background: #DCFCE7;
+  color: #166534;
+  border-color: #BBF7D0;
+}
+
+.alert-danger {
+  background: #FEE2E2;
+  color: #991B1B;
+  border-color: #FECACA;
+}
+
+.alert-warning {
+  background: #FEF3C7;
+  color: #92400E;
+  border-color: #FDE68A;
+}
+
+.alert-info {
+  background: #DBEAFE;
+  color: #1E40AF;
+  border-color: #BFDBFE;
+}
 
 .emergency-banner {
   background: #DC2626;
@@ -387,9 +443,17 @@ img {
 }
 
 @keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.4); }
-  70% { box-shadow: 0 0 0 10px rgba(220, 38, 38, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
+  0% {
+    box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.4);
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgba(220, 38, 38, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(220, 38, 38, 0);
+  }
 }
 
 .btn-close {
@@ -441,7 +505,8 @@ img {
   flex-wrap: wrap;
 }
 
-.hero-search-box input, .hero-search-box select {
+.hero-search-box input,
+.hero-search-box select {
   flex: 1;
   min-width: 180px;
 }
@@ -508,7 +573,8 @@ img {
   margin-top: 10px;
 }
 
-.table th, .table td {
+.table th,
+.table td {
   padding: 12px 16px;
   text-align: left;
   border-bottom: 1px solid var(--border-color);
@@ -575,12 +641,60 @@ img {
 }
 
 /* ==========================================================================
+   Login Page - Brown Paw Pattern Background (Full Page Coverage)
+   ========================================================================== */
+body.login-page,
+body:has(.login-page-bg),
+.login-page-bg {
+  min-height: 100vh;
+  background-color: #FAF6F0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='138' height='138' viewBox='0 0 138 138'%3E%3Cg fill='%236B4226' opacity='0.15'%3E%3Cg transform='translate(28, 22) rotate(-18) scale(0.75)'%3E%3Cellipse cx='25' cy='33' rx='12' ry='9'/%3E%3Ccircle cx='13' cy='18' r='4'/%3E%3Ccircle cx='21' cy='12' r='4.2'/%3E%3Ccircle cx='29' cy='12' r='4.2'/%3E%3Ccircle cx='37' cy='18' r='4'/%3E%3C/g%3E%3Cg transform='translate(92, 86) rotate(22) scale(0.85)'%3E%3Cellipse cx='25' cy='33' rx='12' ry='9'/%3E%3Ccircle cx='13' cy='18' r='4'/%3E%3Ccircle cx='21' cy='12' r='4.2'/%3E%3Ccircle cx='29' cy='12' r='4.2'/%3E%3Ccircle cx='37' cy='18' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+body.login-page main,
+body:has(.login-page-bg) main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+body.login-page .site-footer,
+body:has(.login-page-bg) .site-footer {
+  margin-top: 0;
+}
+
+.login-page-bg {
+  flex: 1;
+  width: 100%;
+  padding: 30px 20px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-page-bg .card {
+  background: #FFFFFF;
+  box-shadow: 0 14px 36px rgba(107, 66, 38, 0.14);
+  border-radius: var(--radius-lg);
+}
+
+/* ==========================================================================
    Responsive Breakpoints
    ========================================================================== */
 @media (max-width: 992px) {
-  .grid-4 { grid-template-columns: repeat(2, 1fr); }
-  .grid-3 { grid-template-columns: repeat(2, 1fr); }
-  .footer-grid { grid-template-columns: repeat(2, 1fr); }
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
@@ -610,7 +724,9 @@ img {
     max-height: 85px;
   }
 
-  .grid-2, .grid-3, .grid-4 {
+  .grid-2,
+  .grid-3,
+  .grid-4 {
     grid-template-columns: 1fr;
   }
 
