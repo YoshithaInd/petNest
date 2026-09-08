@@ -108,7 +108,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 0;
+  padding: 2px 0;
 }
 
 .brand-logo {
@@ -122,8 +122,8 @@ img {
 }
 
 .brand-logo img {
-  max-height: 44px;
-  height: auto;
+  height: 100px;
+  max-height: 110px;
   width: auto;
   max-width: 100%;
   object-fit: contain;
@@ -603,6 +603,11 @@ img {
 
   .mobile-toggle {
     display: block;
+  }
+
+  .brand-logo img {
+    height: 75px;
+    max-height: 85px;
   }
 
   .grid-2, .grid-3, .grid-4 {
