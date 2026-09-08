@@ -4,9 +4,9 @@
     <div class="container">
         <div class="footer-grid">
             <div class="footer-col">
-                <div class="brand-logo" style="color: #FFFFFF; margin-bottom: 12px;">
-                    <i class="fa-solid fa-house-chimney-paw"></i> PetNest
-                </div>
+                <a href="<?= BASE_URL ?>/index.php" class="brand-logo" style="margin-bottom: 16px; display: inline-block;">
+                    <img src="<?= BASE_URL ?>/assets/images/logo.jpeg" alt="PetNest - Where Pets Feel at Home">
+                </a>
                 <p style="font-size: 0.9rem; line-height: 1.6; color: #C2B4AA;">
                     PetNest bridges the gap between loving pet owners and verified, caring keepers. Providing safe, transparent, and trackable pet boarding.
                 </p>
