@@ -7,11 +7,7 @@ $user = currentUser();
 <header class="site-header">
     <div class="container navbar">
         <a href="<?= BASE_URL ?>/index.php" class="brand-logo">
-            <i class="fa-solid fa-house-chimney-paw"></i>
-            <div>
-                PetNest
-                <span class="tagline">Where Pets Feel at Home</span>
-            </div>
+            <img src="<?= BASE_URL ?>/assets/images/logo.jpeg" alt="PetNest - Where Pets Feel at Home">
         </a>
 
         <button class="mobile-toggle" aria-label="Toggle navigation">
