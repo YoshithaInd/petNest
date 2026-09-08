@@ -112,15 +112,25 @@ img {
 }
 
 .brand-logo {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 10px;
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--primary);
+  text-decoration: none;
 }
 
-.brand-logo svg, .brand-logo img {
+.brand-logo img {
+  max-height: 44px;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.brand-logo svg {
   height: 34px;
 }
 
